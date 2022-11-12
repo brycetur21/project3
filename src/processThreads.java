@@ -26,6 +26,7 @@ public class processThreads extends Thread {
                 current_burst = i;
                 System.out.println("Proc. Thread " + this.id + " | on Burst: " + current_burst);
             }
+            System.out.println("Proc. Thread " + this.id + " | Finished.");
             System.out.println();
             this.complete = true;
             Main.threadFinished[id].release();
