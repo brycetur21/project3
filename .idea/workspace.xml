@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e87ba58-0c3b-4147-8060-56235a725246" name="Changes" comment="update">
-      <change afterPath="$PROJECT_DIR$/src/Dispatcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/processThreads.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/readyQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dispatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dispatcher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RoundRobinScheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RoundRobinScheduler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/processThreads.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/processThreads.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

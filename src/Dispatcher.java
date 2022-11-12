@@ -1,16 +1,21 @@
+import java.util.concurrent.Semaphore;
+
 public class Dispatcher extends Thread {
     public int id;
+    public static Semaphore dispatcherStart;
     public readyQueue queue;
 
-    public Dispatcher(int id, readyQueue queue) {
+    public Dispatcher(int id, readyQueue queue, Semaphore dispatcherStart) {
         this.id = id;
         this.queue = queue;
+        Dispatcher.dispatcherStart = dispatcherStart;
     }
 
     @Override
     public void run() {
 
         while (!queue.isEmpty()) {
+            //dispatcherStart.acquireUninterruptibly();
             Main.dispatcher_semaphores[id].acquireUninterruptibly();
 
             // Pop a process off the list, send it to the CPU

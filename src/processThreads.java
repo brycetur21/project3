@@ -18,7 +18,7 @@ public class processThreads extends Thread {
     @Override
     public void run() {
 
-        while (this.current_burst < this.max_burst) {
+        while (this.current_burst < this.max_burst - 1) {
 
             // Wait for a ticket
             Main.threadSemaphore[id].acquireUninterruptibly();

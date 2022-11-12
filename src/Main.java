@@ -42,12 +42,13 @@ public class Main {
     }
 
     public static void createDispatchers(int number_of_cores) {
+
         dispatcher_semaphores = new Semaphore[number_of_cores];
         dispatchers = new Dispatcher[number_of_cores];
         for (int i = 0; i < dispatchers.length; i++) {
             dispatcher_semaphores[i] = new Semaphore(1);
             System.out.println("Main thread | Forking dispatcher " + i);
-            dispatchers[i] = new Dispatcher(i, queue);
+            dispatchers[i] = new Dispatcher(i, queue, new Semaphore(1));
             dispatchers[i].start();
         }
         System.out.println();
@@ -259,7 +260,7 @@ public class Main {
             System.out.println("invalid input, check input parameters");
 
 
-        int num_threads = 5;
+        int num_threads = 15;
 
         System.out.println("Number of threads to fork: " + num_threads);
         System.out.println();
