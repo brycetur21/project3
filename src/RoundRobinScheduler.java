@@ -1,10 +1,10 @@
 public class RoundRobinScheduler {
     private int time_quantum;
     Dispatcher cpu_dispatcher; // dispatcher object
-    ReadyQueue ready_queue; // ready queue object
+    readyQueue ready_queue; // ready queue object
 
     // constructor
-    public RoundRobinScheduler(ReadyQueue rq, Dispatcher dp, int tq) {
+    public RoundRobinScheduler(readyQueue rq, Dispatcher dp, int tq) {
         this.cpu_dispatcher = dp;
         this.ready_queue = rq;
         this.time_quantum = tq;
